@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/pokemons.png">
+    <title>Pokemon Bakım İstasyonu</title>
+</head>
+<body>
+    <header>
+        <div id="banner"><img src="images/Poké_Balll.png"></div>
+        <h1>Pokemon İstasyonu</h1>
+        <label for="species">Bir Pokemon Seçin:</label>
+        <select id="species" name="species">
+            <option value="pikachu">Pikachu</option>
+            <option value="charmander">Charmander</option>
+            <option value="bulbasaur">Bulbasaur</option>
+            <option value="squirtle">Squirtle</option>
+        </select>
+        <button id="select">Eğitime Başlamak İçin</button>
+    </header>
+    <main>
+        <div id="petPic">
+            <img src="/images/pokemons.png">
+        </div>
+        <div id="messageBox">
+            <h4>Pokemonun mesajı <span class="species"></span>: <span id="petMessage"></span></h4>
+        </div>
+        <ul>
+            <li id="name">İsim: <span class="species"></span></li><br>
+            <li id="health">Sağlık: <span class="health"></span> </li><div class="healthBar"><div id="healthBarStat"></div></div><br>
+            <li id="happiness">Mutluluk: <span class="happiness"></span> </li><div class="healthBar"><div id="happinessBarStat"></div></div><br>
+            <li id="hunger">Açlık: <span class="hunger"></span> </li><div class="healthBar"><div id="hungerBarStat"></div></div><br>
+            <li id="heals">Kalan Sağlık Miktarı: <span class="heals"></span> </li><br>
+            <li id="food">Kalan Yemek Miktarı: <span class="food"></span> </li><br>
+        </ul>
+        <button id="feedPet">Besle <span class="species"></span></button><br>
+        <button id="healPet">İyileştir <span class="species"></span></button><br>
+        <button id="playPet">Oyun Oyna <span class="species"></span></button>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

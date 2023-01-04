@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+}
+
+h1 {
+    padding: 15px 0;
+    font-size: 1.8rem;
+}
+
+.healthBar{
+    height: 8px;
+    width: 100px;
+    border: 1px solid black;
+    background: transparent;
+    margin: 0;
+    display: inline-block;
+}
+
+#healthBarStat {
+    width: 100px;
+    height: 8px;
+    background-color: green
+}
+
+#happinessBarStat {
+    width: 50px;
+    height: 8px;
+    background-color: green
+}
+
+#hungerBarStat {
+    width: 0px;
+    height: 8px;
+    background-color: green;
+}
+
+#petPic img {
+    height: 150px;
+    margin: 10px 0;
+}
+
+#messageBox{
+    width: 30%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #aeaba0;
+    padding: 10px;
+}
+
+#banner{
+    height: 10vh;
+    background-color: #f90707;
+}
+
+#banner img{
+    height: 100%;
+}
+
+button{
+    padding: 5px;
+    background-color: #dd0d0d;
+    border-radius: 5px;
+    color: rgb(237, 235, 235);
+}
+
+select {
+    color: black;
+    background-color: rgb(249, 245, 245);
+}
+
+button:hover {
+    background-color: #dbdccb;
+}
+
+
+ul {
+    width: 20%;
+    margin: 0 auto;
+    text-align: left;
+    list-style-type:none;
+}
+
+li{
+    display: inline-block;
+}
+
+li, button {
+    margin-top: 3px;
+    margin-bottom: 3px; 
+}
+
+@media screen and (max-width: 866px) {
+    ul{
+        width: 50%;
+    }
+    #messageBox{
+        width: 90%;
+    }
+}
